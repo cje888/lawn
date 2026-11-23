@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pro-Turf Lawn & Irrigation | Pretoria East</title>
+<meta name="description" content="Lawn maintenance, irrigation and instant lawn in Pretoria East and Centurion. We come to you.">
+<meta property="og:title" content="Pro-Turf Lawn & Irrigation">
+<meta property="og:description" content="Lawn maintenance, irrigation, instant lawn and JoJo water tanks in Pretoria East and Centurion.">
+<meta property="og:image" content="https://lawn.cevyq.com/img/hero.jpg">
+<meta property="og:url" content="https://lawn.cevyq.com/">
+<meta name="theme-color" content="#0f3d25">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f3f6f1;--paper:#fff;--ink:#132017;--steel:#5b6b5d;--line:#d8e2d3;--green:#1f7a3d;--green2:#e3f3e5;--lime:#8bc63e;--dark:#0f3d25;--cond:"Barlow Condensed",Impact,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font:400 16px/1.5 Barlow,system-ui,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:84px}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+  img{display:block;max-width:100%}
+  svg{width:20px;height:20px;flex:none}
+
+  .hero{position:relative;height:520px;max-height:82vh;min-height:440px;overflow:hidden;background:#13321f}
+  .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,18,.45) 0%,rgba(10,30,18,.15) 30%,rgba(10,30,18,.1) 45%,rgba(10,26,16,.94) 100%)}
+  .bar{position:absolute;z-index:2;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:16px 18px;color:#fff}
+  .logo{display:flex;align-items:center;gap:8px;font:700 1.05rem/1 var(--cond);letter-spacing:.06em;text-transform:uppercase}
+  .logo i{width:30px;height:30px;border-radius:6px;background:var(--lime);display:grid;place-items:center;font-style:normal}
+  .logo i svg{width:18px;height:18px;color:#0f3d25}
+  .live{display:flex;align-items:center;gap:7px;font:500 .78rem/1 var(--mono);background:rgba(0,0,0,.4);backdrop-filter:blur(6px);padding:8px 11px;border-radius:6px}
+  .live i{width:8px;height:8px;border-radius:50%;background:#8bc63e;box-shadow:0 0 0 0 rgba(139,198,62,.6);animation:pulse 2s infinite}
+  .live.off i{background:#ffb020;animation:none}
+  @keyframes pulse{70%{box-shadow:0 0 0 8px rgba(139,198,62,0)}100%{box-shadow:0 0 0 0 rgba(139,198,62,0)}}
+  .who{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:0 18px 22px;color:#fff}
+  .tag{display:inline-block;font:700 .74rem/1 var(--mono);letter-spacing:.08em;background:var(--lime);color:#0f3d25;padding:6px 8px;border-radius:4px;text-transform:uppercase}
+  h1{font:800 3.4rem/.95 var(--cond);letter-spacing:-.01em;margin-top:12px}
+  .sub{margin-top:8px;font-size:1rem;color:rgba(255,255,255,.85)}
+  .sub b{color:#fff;font-weight:600}
+
+  .specs{display:grid;grid-template-columns:repeat(3,1fr);background:var(--dark);color:#fff}
+  .specs div{padding:14px 10px 16px;text-align:center;border-left:1px solid #1c4a2f}
+  .specs div:first-child{border-left:0}
+  .specs b{display:block;font:700 1.7rem/1 var(--cond);color:var(--lime)}
+  .specs span{font:500 .66rem/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#a7c2ab;display:block;margin-top:6px}
+
+  .wrap{max-width:560px;margin:0 auto;padding:0 16px}
+  .acts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+  .acts a{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 4px;background:var(--paper);border:1px solid var(--line);border-radius:8px;font-weight:600;font-size:.82rem}
+  .acts a svg{width:22px;height:22px}
+  .acts a.hot{background:var(--green);border-color:var(--green);color:#fff}
+  .intro{margin-top:18px;font-size:1.06rem;line-height:1.55}
+  .badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .badges span{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:.82rem;padding:7px 10px;background:var(--paper);border:1px solid var(--line);border-radius:6px}
+  .badges svg{width:16px;height:16px;color:var(--green)}
+
+  section{margin-top:44px}
+  .kick{display:flex;align-items:center;gap:10px;font:700 .74rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+  .kick::after{content:"";flex:1;height:1px;background:var(--line)}
+  h2{font:800 2.3rem/.95 var(--cond);margin-top:10px;letter-spacing:-.005em}
+  .lead{margin-top:8px;color:var(--steel)}
+
+  .ticket{margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .thead{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--dark);color:#fff;font:500 .76rem/1 var(--mono);letter-spacing:.06em}
+  .thead b{color:var(--lime)}
+  .job{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;width:100%;text-align:left;padding:14px;border-top:1px dashed var(--line)}
+  .job:first-of-type{border-top:0}
+  .box{width:24px;height:24px;border:2px solid #bcc8ba;border-radius:5px;display:grid;place-items:center;transition:.15s}
+  .box svg{width:16px;height:16px;color:#fff;opacity:0}
+  .job[aria-pressed="true"] .box{background:var(--green);border-color:var(--green)}
+  .job[aria-pressed="true"] .box svg{opacity:1}
+  .job b{display:block;font-weight:600;font-size:1rem;line-height:1.25}
+  .job small{display:block;color:var(--steel);font-size:.84rem;line-height:1.35;margin-top:2px}
+  .job em{font:700 .95rem/1 var(--mono);font-style:normal;white-space:nowrap}
+  .job em small{display:block;text-align:right;font:500 .64rem/1.4 var(--mono);color:var(--steel)}
+  .car{padding:14px;border-top:1px solid var(--line);display:grid;gap:10px;background:#f6f9f4}
+  .car label{font:700 .7rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+  .car input{width:100%;font:inherit;padding:12px;border:1px solid var(--line);border-radius:6px;background:#fff;margin-top:6px}
+  .car input:focus{outline:2px solid var(--green);outline-offset:-1px;border-color:transparent}
+  .total{display:flex;justify-content:space-between;align-items:flex-end;padding:16px 14px;border-top:2px solid var(--dark)}
+  .total span{font:700 .72rem/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+  .total b{font:800 2.2rem/1 var(--cond)}
+  .tsend{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 14px}
+  .btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px;border-radius:8px;font-weight:700;background:var(--dark);color:#fff}
+  .btn.o{background:var(--green)}
+  .btn:disabled{opacity:.35}
+  .fine2{padding:0 14px 14px;font-size:.78rem;color:var(--steel)}
+
+  .strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:18px -16px 0;padding:0 16px 6px;scrollbar-width:none}
+  .strip::-webkit-scrollbar{display:none}
+  .shot{flex:0 0 72%;scroll-snap-align:start;position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/5;background:#1c4a2f}
+  .shot img{width:100%;height:100%;object-fit:cover}
+  .shot.icon{display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#1c4a2f,#0f3d25)}
+  .shot.icon svg{width:92px;height:92px;color:rgba(255,255,255,.22)}
+  .shot::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.8))}
+  .shot p{position:absolute;z-index:1;left:14px;right:14px;bottom:14px;color:#fff}
+  .shot p b{display:block;font:800 1.6rem/1 var(--cond)}
+  .shot p span{font-size:.86rem;color:rgba(255,255,255,.85)}
+  .shot i{position:absolute;z-index:1;top:12px;left:12px;font:700 .7rem/1 var(--mono);background:#fff;color:var(--ink);padding:6px 8px;border-radius:4px;font-style:normal}
+
+  .steps{margin-top:18px;display:grid;gap:0;border-left:2px solid var(--dark);margin-left:12px}
+  .step{position:relative;padding:0 0 22px 26px}
+  .step:last-child{padding-bottom:0}
+  .step::before{content:attr(data-n);position:absolute;left:-15px;top:-2px;width:28px;height:28px;border-radius:6px;background:var(--green);color:#fff;font:700 .78rem/28px var(--mono);text-align:center}
+  .step b{display:block;font:800 1.35rem/1.1 var(--cond)}
+  .step span{color:var(--steel);font-size:.95rem}
+
+  .warr{margin-top:18px;display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .stamp{width:120px;height:120px;color:var(--green)}
+  .stamp text{font:700 10.5px var(--mono);letter-spacing:2.2px;fill:currentColor}
+  .warr b{display:block;font:800 1.5rem/1 var(--cond)}
+  .warr p{color:var(--steel);font-size:.92rem;margin-top:6px}
+
+  .bk{margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .bk-strip{display:flex;gap:8px;overflow-x:auto;margin:0 -14px;padding:0 14px 4px;scrollbar-width:none}
+  .bk-strip::-webkit-scrollbar{display:none}
+  .bk-day{flex:0 0 62px;padding:10px 0;border:1px solid var(--line);border-radius:8px;text-align:center;background:#f6f9f4}
+  .bk-day small{display:block;font:500 .66rem/1 var(--mono);text-transform:uppercase;color:var(--steel)}
+  .bk-day b{display:block;font:800 1.7rem/1.1 var(--cond);margin-top:4px}
+  .bk-day em{font:500 .66rem/1 var(--mono);font-style:normal;color:var(--steel);text-transform:uppercase}
+  .bk-day.on{background:var(--dark);border-color:var(--dark);color:#fff}
+  .bk-day.on small,.bk-day.on em{color:#c7d9cb}
+  .bk-day:disabled{opacity:.35;text-decoration:line-through}
+  .bk-q{margin-top:14px;font:700 .7rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+  .bk-sl{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+  .bk-s{padding:12px;border:1px solid var(--line);border-radius:8px;font-weight:600;font-size:.92rem}
+  .bk-s.on{border:2px solid var(--green);color:var(--green);padding:11px}
+  .bk-sum{margin-top:14px;font:500 .84rem/1.4 var(--mono)}
+  .bk-send{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+  .bk-go{padding:14px;border-radius:8px;font-weight:700;background:var(--dark);color:#fff}
+  .bk-go.bk-wa{background:var(--green)}
+  .bk-go:disabled{opacity:.3}
+  .bk-note{margin-top:10px;font-size:.8rem;color:var(--steel)}
+
+  .score{margin-top:18px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:var(--dark);color:#fff;border-radius:10px;padding:18px}
+  .score>b{font:800 3.6rem/1 var(--cond)}
+  .score>b small{display:block;font:500 .7rem/1.4 var(--mono);color:#a7c2ab;letter-spacing:.06em;text-transform:uppercase}
+  .stars{color:var(--lime);letter-spacing:2px}
+  .bars{display:grid;gap:5px;font:500 .7rem/1 var(--mono);color:#a7c2ab}
+  .bars div{display:grid;grid-template-columns:10px 1fr;gap:8px;align-items:center}
+  .bars i{height:6px;background:#1c4a2f;border-radius:3px;overflow:hidden;display:block}
+  .bars i::before{content:"";display:block;height:100%;width:var(--w);background:var(--lime)}
+  .revs{margin-top:10px;display:grid;gap:10px}
+  .rev{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .rev q{display:block;quotes:none;font-size:1rem}
+  .rev small{display:flex;justify-content:space-between;margin-top:10px;font:500 .74rem/1.3 var(--mono);color:var(--steel)}
+
+  .hrs{margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .hrs div{display:flex;justify-content:space-between;padding:13px 14px;border-top:1px solid var(--line);font-size:.95rem}
+  .hrs div:first-child{border-top:0}
+  .hrs b{font:500 .86rem/1.5 var(--mono)}
+  .zones{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .zones span{font:500 .78rem/1 var(--mono);padding:8px 10px;border-radius:6px;background:var(--dark);color:#fff}
+
+  .tools{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:40px}
+  .tools button{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:8px;border:1px solid var(--line);background:var(--paper);font-weight:600}
+  .claim{margin-top:26px;border:2px dashed var(--dark);border-radius:10px;padding:18px;text-align:center}
+  .claim .kick{justify-content:center}
+  .claim .kick::after{display:none}
+  .claim p{margin-top:8px;color:var(--steel);font-size:.94rem}
+  .claim p b{color:var(--ink)}
+  .claim a{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:13px 20px;border-radius:8px;background:var(--dark);color:#fff;font-weight:700}
+  details.priv{margin-top:18px;font-size:.84rem;color:var(--steel);border-top:1px solid var(--line);padding-top:12px}
+  details.priv summary{cursor:pointer;font-weight:600;color:var(--ink)}
+  details.priv p{margin-top:8px}
+  details.priv a{text-decoration:underline}
+  .fine{margin-top:14px;font-size:.74rem;color:#889a8b;text-align:center}
+  footer{margin-top:8px;text-align:center;font-size:.8rem;color:var(--steel)}
+  footer a{text-decoration:underline;text-underline-offset:2px}
+
+  .dock{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(243,246,241,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+  .dock.on{transform:none}
+  .dock a{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:8px;font-weight:700;background:var(--dark);color:#fff}
+  .dock a.o{background:var(--green)}
+
+  .sheet{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:flex-end;justify-content:center;z-index:50;padding:16px}
+  .sheet.on{display:flex}
+  .sheet .in{background:#fff;border-radius:12px;padding:22px;width:100%;max-width:380px;text-align:center}
+  .sheet h3{font:800 1.8rem/1 var(--cond)}
+  .sheet img{width:220px;height:220px;margin:14px auto 8px}
+  .sheet button{margin-top:8px;padding:12px 24px;border-radius:8px;background:var(--dark);color:#fff;font-weight:700}
+  .toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(20px);opacity:0;background:var(--dark);color:#fff;padding:12px 18px;border-radius:8px;font-size:.88rem;transition:.25s;z-index:60;pointer-events:none;white-space:nowrap}
+  .toast.on{opacity:1;transform:translateX(-50%)}
+  @media(min-width:640px){.hero{height:600px}h1{font-size:4.4rem}.shot{flex-basis:46%}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="img/hero.jpg" alt="Lush green lawn" width="2000" height="1333">
+  <div class="bar">
+    <div class="logo"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c0 6-4 7-4 11a4 4 0 008 0c0-4-4-5-4-11z"/><path d="M4 21c2-3 5-4 8-4s6 1 8 4"/></svg></i>Pro-Turf</div>
+    <div class="live" id="live"><i></i><span>Taking bookings</span></div>
+  </div>
+  <div class="who">
+    <span class="tag">Lawn & Irrigation</span>
+    <h1>Pro-Turf<br>Lawn &amp; Irrigation</h1>
+    <p class="sub">Pieter Kruger, <b>Pretoria East &amp; Centurion</b>. We come to your garden.</p>
+  </div>
+</header>
+
+<div class="specs">
+  <div><b>9 yrs</b><span>In the game</span></div>
+  <div><b>650+</b><span>Gardens kept</span></div>
+  <div><b>48 hr</b><span>Avg quote time</span></div>
+</div>
+
+<main class="wrap">
+  <div class="acts">
+    <a class="hot" href="#" data-go="wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 11.9 11.9 0 004.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 001.8-1.3 2.3 2.3 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+    <a href="#" data-go="sms"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg>Text</a>
+    <a href="#" data-go="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Call</a>
+    <a href="#" data-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/><path d="M19 3v5M16.5 5.5h5"/></svg>Save</a>
+  </div>
+  <p class="intro">Grass getting away from you? Sprinklers not sprinkling? We handle lawn care, irrigation and water catchment for homes and estates, and give you the price before we start.</p>
+  <div class="badges">
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V7a1 1 0 011-1h11v10M14 9h4l3 4v3h-7"/><circle cx="6.5" cy="17" r="1.8"/><circle cx="17.5" cy="17" r="1.8"/></svg>Own trucks & equipment</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Fully insured crews</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/></svg>EFT, cash or card</span>
+  </div>
+
+  <section id="quote">
+    <div class="kick">01 / Build your job</div>
+    <h2>Tick what you need. See the price.</h2>
+    <p class="lead">Call out and quote are free. Nothing starts until you say go.</p>
+    <div class="ticket">
+      <div class="thead"><span>JOB SHEET <b id="tno">#PT-0000</b></span><span id="tdate"></span></div>
+      <div id="jobs"></div>
+      <div class="car">
+        <div><label for="f1">Address or suburb</label><input id="f1" type="text" placeholder="Garsfontein, Pretoria East" autocomplete="off"></div>
+        <div><label for="f2">Rough garden size</label><input id="f2" type="text" placeholder="e.g. 400 sqm, small front lawn" autocomplete="off"></div>
+      </div>
+      <div class="total"><span>Estimate<br>from</span><b id="sum">R0</b></div>
+      <div class="tsend"><button class="btn o" id="jobWa" disabled>WhatsApp us</button><button class="btn" id="jobSms" disabled>Text us</button></div>
+      <p class="fine2">Example prices for the Pretoria East and Centurion area. Instant lawn and tanks are quoted on size and will be confirmed before we start.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="kick">02 / What we do</div>
+    <h2>Lawn, water and everything green</h2>
+    <div class="strip">
+      <div class="shot"><img src="img/mowing.jpg" alt="Mowing a lawn" loading="lazy"><i>FROM R280</i><p><b>Mowing & edging</b><span>Mowing, edging, trimming and a tidy up, on a schedule or once off.</span></p></div>
+      <div class="shot"><img src="img/irrigation.jpg" alt="Irrigation sprinkler watering a lawn" loading="lazy"><i>FROM R550</i><p><b>Irrigation servicing & sales</b><span>Sprinkler systems serviced, repaired, or installed from scratch.</span></p></div>
+      <div class="shot icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c4-6 14-6 18 0"/><path d="M3 17h18M6 14c3-4 9-4 12 0M9 11c1.5-2 4.5-2 6 0"/></svg><i>FROM R95/m²</i><p><b>Instant lawn</b><span>Rolled turf supplied and laid. Old lawn cleared, new lawn down in a day.</span></p></div>
+      <div class="shot icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l2 3v13a2 2 0 01-2 2H8a2 2 0 01-2-2V6z"/><path d="M6 9h12M10 3v3M14 3v3"/></svg><i>FROM R4,850</i><p><b>JoJo tanks & catchment</b><span>Water tank supply, gutters and piping so rain water is not wasted.</span></p></div>
+      <div class="shot"><img src="img/lawn.jpg" alt="Healthy green lawn" loading="lazy"><i>YEAR ROUND</i><p><b>Garden care</b><span>Feeding, weed control and overseeding to keep the lawn thick and green.</span></p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kick">03 / How it works</div>
+    <h2>No guesswork, no surprises</h2>
+    <div class="steps">
+      <div class="step" data-n="01"><b>Send your address</b><span>Tell us what's needed and roughly how big the garden is. A photo helps.</span></div>
+      <div class="step" data-n="02"><b>Get a free quote</b><span>Clear price and a day that works for you. Nothing starts until you agree.</span></div>
+      <div class="step" data-n="03"><b>We turn up and get it done</b><span>Own equipment, own water if needed, and we clean up after ourselves.</span></div>
+    </div>
+    <div class="warr">
+      <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="ring" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+        <circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        <circle cx="60" cy="60" r="35" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text><textPath href="#ring">IRRIGATION AND TANK WORK · GUARANTEED · </textPath></text>
+        <text x="60" y="58" text-anchor="middle" style="font:800 26px 'Barlow Condensed'">12</text>
+        <text x="60" y="74" text-anchor="middle" style="font:700 8px 'JetBrains Mono';letter-spacing:1px">MONTHS</text>
+      </svg>
+      <div><b>12 month workmanship guarantee</b><p>Quality fittings and tanks on every job. If something we installed is not right, we come back and fix it.</p></div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="kick">04 / Book a slot</div>
+    <h2>Pick a day and time</h2>
+    <p class="lead">We confirm by message within the hour. Sundays we're closed, message us and we'll call Monday.</p>
+    <div class="bk" id="cal"></div>
+  </section>
+
+  <section>
+    <div class="kick">05 / Reviews</div>
+    <h2>What the neighbours say</h2>
+    <div class="score">
+      <b>4.9<small><span class="stars">★★★★★</span><br>184 reviews</small></b>
+      <div class="bars"><div>5<i style="--w:91%"></i></div><div>4<i style="--w:7%"></i></div><div>3<i style="--w:1%"></i></div><div>2<i style="--w:1%"></i></div><div>1<i style="--w:0%"></i></div></div>
+    </div>
+    <div class="revs">
+      <div class="rev"><q>Our borehole irrigation hadn't worked properly in years. Pieter's team found the fault in one visit and the lawn has never looked better.</q><small><span>Marietjie, Waterkloof</span><span class="stars">★★★★★</span></small></div>
+      <div class="rev"><q>Had instant lawn laid on a Saturday, it looked like a show garden by Monday. Fair price and no mess left behind.</q><small><span>Thabo, Faerie Glen</span><span class="stars">★★★★★</span></small></div>
+      <div class="rev"><q>Put in two JoJo tanks off our roof gutters before the last water cuts. Best decision we made all year.</q><small><span>The Botha family, Centurion</span><span class="stars">★★★★★</span></small></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kick">06 / Hours and area</div>
+    <h2>Where we work</h2>
+    <div class="hrs">
+      <div><span>Monday to Saturday</span><b>7:00 am to 5:00 pm</b></div>
+      <div><span>Sunday</span><b>Closed</b></div>
+    </div>
+    <div class="zones"><span>Centurion</span><span>Pretoria East</span><span>Waterkloof</span><span>Faerie Glen</span><span>Silver Lakes</span><span>Midrand</span></div>
+  </section>
+
+  <div class="tools">
+    <button data-share><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>Share card</button>
+    <button data-qr><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>QR code</button>
+  </div>
+
+  <div class="claim">
+    <div class="kick">Sample card</div>
+    <p>This is a demo made by CEVYQ Group. Want a card like this for your lawn, garden or irrigation business? <b>R1,600 one payment</b>, no monthly fees, ready in a day.</p>
+    <a href="https://wa.me/66631101888?text=Hi%2C%20I%20saw%20the%20Pro-Turf%20lawn%20demo%20card%20and%20would%20like%20one%20for%20my%20business." target="_blank" rel="noopener">Get my own card</a>
+  </div>
+
+  <details class="priv">
+    <summary>Privacy</summary>
+    <p>When you book or send a job, the details you type go straight to Pro-Turf in your own WhatsApp or text app. This card does not store them. Visits and button taps are counted without names so the business can see how the card is doing. To ask for anything to be removed, email <a href="mailto:chris@cevyq.com">chris@cevyq.com</a> or WhatsApp +66 63 110 1888.</p>
+  </details>
+  <p class="fine">Sample card made by CEVYQ Group. Name, reviews and prices are examples. Photos from Unsplash.</p>
+  <footer>Built by <a href="https://www.cevyq.com">CEVYQ Group</a> | <a href="https://www.cevyq.com">www.cevyq.com</a></footer>
+</main>
+
+<nav class="dock" id="dock">
+  <a href="#" data-go="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Call</a>
+  <a class="o" href="#quote">Get a price</a>
+</nav>
+
+<div class="sheet" id="sheet" role="dialog" aria-label="QR code"><div class="in">
+  <h3>Scan to open this card</h3>
+  <img id="qrImg" alt="QR code for this card">
+  <button id="closeQr">Close</button>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+var C = {WA:"66631101888", TEL:"+66631101888", MAIL:"hello@cevyq.com", NAME:"Pieter Kruger", FIRST:"Pieter", ORG:"Pro-Turf Lawn & Irrigation", TITLE:"Owner", NOTE:"Lawn maintenance, irrigation and instant lawn in Pretoria East and Centurion.", HI:"Hello CEVYQ sales team, I'm interested in the offer.", TZ:"Africa/Johannesburg", HOURS:[[1,7,17],[2,7,17],[3,7,17],[4,7,17],[5,7,17],[6,7,17]]};
+var toast = document.getElementById("toast"), tt;
+function say(x){ toast.textContent = x; toast.classList.add("on"); clearTimeout(tt); tt = setTimeout(function(){ toast.classList.remove("on"); }, 2600); }
+function wa(x){ window.open("https://wa.me/" + C.WA + "?text=" + encodeURIComponent(x), "_blank", "noopener"); }
+function line(x){ window.open("https://line.me/R/msg/text/?" + encodeURIComponent(x), "_blank", "noopener"); }
+function mail(x){ location.href = "mailto:" + C.MAIL + "?subject=" + encodeURIComponent("Enquiry for " + C.NAME) + "&body=" + encodeURIComponent(x); }
+function sms(x){ location.href = "sms:" + C.TEL + "?&body=" + encodeURIComponent(x); }
+function send(ch, x){ if (ch === "line") line(x); else if (ch === "sms") sms(x); else if (ch === "mail") mail(x); else wa(x); }
+function hi(){ return typeof C.HI === "function" ? C.HI() : C.HI; }
+document.querySelectorAll("[data-go]").forEach(function(a){
+  a.addEventListener("click", function(ev){
+    ev.preventDefault();
+    var g = a.getAttribute("data-go");
+    if (g === "call") location.href = "tel:" + C.TEL; else send(g, hi());
+  });
+});
+document.querySelectorAll("[data-save]").forEach(function(b){
+  b.addEventListener("click", function(ev){
+    ev.preventDefault();
+    var p = C.NAME.split(" ");
+    var v = ["BEGIN:VCARD","VERSION:3.0","FN:" + C.NAME,"N:" + p.slice(1).join(" ") + ";" + p[0] + ";;;","ORG:" + C.ORG,"TITLE:" + C.TITLE,"TEL;TYPE=CELL:" + C.TEL,"URL:" + location.href.split("#")[0],"NOTE:" + C.NOTE,"END:VCARD"].join("\r\n");
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([v], {type:"text/vcard"}));
+    a.download = C.NAME + ".vcf"; document.body.appendChild(a); a.click(); a.remove();
+    say(C.T ? C.T("saved") : "Contact saved");
+  });
+});
+document.querySelectorAll("[data-share]").forEach(function(b){
+  b.addEventListener("click", function(){
+    var u = location.href.split("#")[0];
+    if (navigator.share) navigator.share({title: C.NAME, text: C.NOTE, url: u}).catch(function(){});
+    else if (navigator.clipboard) navigator.clipboard.writeText(u).then(function(){ say(C.T ? C.T("copied") : "Link copied"); });
+  });
+});
+var sheet = document.getElementById("sheet");
+document.querySelectorAll("[data-qr]").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.getElementById("qrImg").src = "https://api.qrserver.com/v1/create-qr-code/?size=440x440&margin=8&data=" + encodeURIComponent(location.href.split("#")[0]);
+    sheet.classList.add("on");
+  });
+});
+document.getElementById("closeQr").addEventListener("click", function(){ sheet.classList.remove("on"); });
+sheet.addEventListener("click", function(ev){ if (ev.target === sheet) sheet.classList.remove("on"); });
+
+/* open now, in the business's own time zone. C.HOURS = [[day 0 Sun..6 Sat, from, to], ...] */
+function openNow(){
+  try {
+    var f = new Intl.DateTimeFormat("en-US", {timeZone: C.TZ, weekday: "short", hour: "numeric", minute: "numeric", hour12: false}).formatToParts(new Date());
+    var o = {}; f.forEach(function(p){ o[p.type] = p.value; });
+    var d = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday), h = (+o.hour % 24) + (+o.minute) / 60;
+    return C.HOURS.some(function(r){ return r[0] === d && h >= r[1] && h < r[2]; });
+  } catch (e) { return true; }
+}
+
+/* booking calendar: month view or a strip of days, then a time slot, then the message goes to the owner to confirm */
+function Booker(el, o){
+  var DAYS = o.days || ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  var MONTHS = o.months || ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var today = new Date(); today.setHours(0,0,0,0);
+  var view = new Date(today.getFullYear(), today.getMonth(), 1), pick = null, slot = null;
+  if (new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate() - today.getDate() < 4) view = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+  function shut(d){ return d < today || (o.closed || []).indexOf(d.getDay()) > -1; }
+  function label(d){ return o.fmt ? o.fmt(d) : DAYS[d.getDay()] + " " + d.getDate() + " " + MONTHS[d.getMonth()]; }
+  function draw(){
+    var h = "";
+    if (o.mode === "strip") {
+      h += '<div class="bk-strip">';
+      for (var i = 0; i < 14; i++) {
+        var d = new Date(today); d.setDate(today.getDate() + i);
+        var s = shut(d), on = pick && +pick === +d;
+        h += '<button type="button" class="bk-day' + (on ? " on" : "") + '"' + (s ? " disabled" : "") + ' data-t="' + (+d) + '"><small>' + (i === 0 ? (o.todayWord || "Today") : DAYS[d.getDay()]) + '</small><b>' + d.getDate() + '</b><em>' + MONTHS[d.getMonth()].slice(0,3) + '</em></button>';
+      }
+      h += '</div>';
+    } else {
+      var first = view.getDay(), n = new Date(view.getFullYear(), view.getMonth() + 1, 0).getDate();
+      var back = view > new Date(today.getFullYear(), today.getMonth(), 1);
+      h += '<div class="bk-head"><button type="button" class="bk-nav" data-m="-1"' + (back ? "" : " disabled") + ' aria-label="Previous month">‹</button><b>' + MONTHS[view.getMonth()] + " " + (o.year ? o.year(view.getFullYear()) : view.getFullYear()) + '</b><button type="button" class="bk-nav" data-m="1" aria-label="Next month">›</button></div>';
+      h += '<div class="bk-grid">';
+      (o.dn || DAYS).forEach(function(x){ h += '<span class="bk-dn">' + x.slice(0, o.dnLen || 2) + '</span>'; });
+      for (var b = 0; b < first; b++) h += "<span></span>";
+      for (var k = 1; k <= n; k++) {
+        var dd = new Date(view.getFullYear(), view.getMonth(), k), sh = shut(dd), sel = pick && +pick === +dd, td = +dd === +today;
+        h += '<button type="button" class="bk-d' + (sel ? " on" : "") + (td ? " today" : "") + '"' + (sh ? " disabled" : "") + ' data-t="' + (+dd) + '">' + k + '</button>';
+      }
+      h += '</div>';
+    }
+    h += '<div class="bk-slots"' + (pick ? "" : " hidden") + '><p class="bk-q">' + (o.slotQ || "Pick a time") + '</p><div class="bk-sl">';
+    o.slots.forEach(function(s){ h += '<button type="button" class="bk-s' + (slot === s ? " on" : "") + '" data-s="' + s + '">' + s + '</button>'; });
+    h += '</div></div>';
+    h += '<p class="bk-sum">' + (pick ? label(pick) + (slot ? ", " + slot : "") : (o.hint || "Tap a day to start")) + '</p>';
+    h += '<div class="bk-send">' + o.send.map(function(c){ return '<button type="button" class="bk-go bk-' + c[0] + '" data-c="' + c[0] + '"' + (pick && slot ? "" : " disabled") + '>' + c[1] + '</button>'; }).join("") + '</div>';
+    if (o.note) h += '<p class="bk-note">' + o.note + '</p>';
+    el.innerHTML = h;
+  }
+  el.addEventListener("click", function(ev){
+    var t = ev.target.closest("button"); if (!t || t.disabled) return;
+    if (t.dataset.m) { view = new Date(view.getFullYear(), view.getMonth() + (+t.dataset.m), 1); }
+    else if (t.dataset.t) { pick = new Date(+t.dataset.t); }
+    else if (t.dataset.s) { slot = t.dataset.s; }
+    else if (t.dataset.c) { send(t.dataset.c, o.msg(label(pick), slot)); return; }
+    draw();
+  });
+  draw();
+  return { redraw: function(n){ slot = null; for (var k in n) o[k] = n[k]; DAYS = o.days || DAYS; MONTHS = o.months || MONTHS; draw(); } };
+}
+
+var JOBS = [
+  ["Mow & edge, once off","Mowing, edging and a tidy up",280],
+  ["Full garden tidy","Mow, edge, trim hedges, blow paths",450],
+  ["Irrigation check & repair","Fault finding, valves, pipe and head repairs",550],
+  ["New irrigation system","Per zone, includes valve and heads",850],
+  ["Instant lawn, per m²","Old grass cleared, new rolled lawn laid",95],
+  ["JoJo tank & catchment","From 2500L, gutters and piping to the tank",4850]
+];
+var jobs = document.getElementById("jobs");
+jobs.innerHTML = JOBS.map(function(j, i){
+  return '<button type="button" class="job" aria-pressed="' + (i === 0) + '" data-i="' + i + '"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span><b>' + j[0] + '</b><small>' + j[1] + '</small></span><em>R' + j[2] + '</em></button>';
+}).join("");
+function picked(){ return [].slice.call(jobs.querySelectorAll('[aria-pressed="true"]')).map(function(b){ return JOBS[+b.dataset.i]; }); }
+function total(){
+  var p = picked(), s = p.reduce(function(a, j){ return a + j[2]; }, 0);
+  document.getElementById("sum").textContent = "R" + s;
+  document.getElementById("jobWa").disabled = document.getElementById("jobSms").disabled = !p.length;
+}
+jobs.addEventListener("click", function(ev){ var b = ev.target.closest(".job"); if (!b) return; b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true"); total(); });
+total();
+var now = new Date();
+document.getElementById("tno").textContent = "#PT-" + String(now.getMonth() + 1).padStart(2, "0") + String(now.getDate()).padStart(2, "0");
+document.getElementById("tdate").textContent = now.toLocaleDateString("en-ZA", {month:"short", day:"numeric"}).toUpperCase();
+function jobMsg(){
+  var p = picked(), v1 = document.getElementById("f1").value.trim() || "not given", v2 = document.getElementById("f2").value.trim() || "not given";
+  return "Hi, I'd like a quote for: " + p.map(function(j){ return j[0]; }).join(", ") + " (estimate from " + document.getElementById("sum").textContent + "). Address: " + v1 + ". Garden size: " + v2 + ".";
+}
+document.getElementById("jobWa").addEventListener("click", function(){ wa(jobMsg()); });
+document.getElementById("jobSms").addEventListener("click", function(){ sms(jobMsg()); });
+
+var lv = document.getElementById("live");
+if (!openNow()) { lv.classList.add("off"); lv.querySelector("span").textContent = "Back at 7 am"; }
+
+Booker(document.getElementById("cal"), {
+  mode: "strip", closed: [0],
+  slots: ["7 to 10 am", "10 am to 1 pm", "1 to 4 pm"],
+  slotQ: "Arrival window", hint: "Tap a day to start",
+  send: [["wa","WhatsApp"],["sms","Text"]],
+  msg: function(d, s){ var v1 = document.getElementById("f1").value.trim(); return "Hi, I'd like to book you for " + d + ", " + s + "." + (v1 ? " Address: " + v1 + "." : "") + " Can you confirm?"; }
+});
+
+var dock = document.getElementById("dock"), hero = document.querySelector(".hero");
+addEventListener("scroll", function(){ dock.classList.toggle("on", scrollY > hero.offsetHeight - 80); }, {passive:true});
+</script>
+<script src="https://cevyq-stats.chris-e41.workers.dev/t.js" data-card="demo-lawn" data-name="Lawn and garden demo (SA)" defer></script>
+</body>
+</html>
